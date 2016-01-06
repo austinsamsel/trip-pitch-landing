@@ -496,7 +496,8 @@ h1.ui.inverted.header {
 
 .ui.inverted.masthead {
   background-color: #E5F3FF;
-  background: url("/assets/img/header-bg.jpg") no-repeat center center;
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover; }
 
 .ui.secondary.inverted.pointing.menu {
