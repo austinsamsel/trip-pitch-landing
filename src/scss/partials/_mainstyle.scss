@@ -96,7 +96,7 @@ h1.ui.inverted.header {
   color: $red;
 }
 
-.ui.inverted.segment{
+.ui.inverted.masthead{
   background-color:$pale-blue;
     background: url('/assets/img/header-bg.jpg') no-repeat center center;
     -webkit-background-size: cover;
@@ -132,4 +132,10 @@ h3{
 }
 .ui.secondary.pointing.menu .active.item{
   color:transparentize($dark-gray, 0.5);
+}
+
+.content-block{
+  min-height:90vh;
+  display:flex;
+  align-self:center;
 }

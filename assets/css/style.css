@@ -494,7 +494,7 @@ h1.ui.inverted.header {
   font-family: "Raleway", sans-serif;
   color: #E46056; }
 
-.ui.inverted.segment {
+.ui.inverted.masthead {
   background-color: #E5F3FF;
   background: url("/assets/img/header-bg.jpg") no-repeat center center;
   background-size: cover; }
@@ -524,6 +524,15 @@ h3 {
 
 .ui.secondary.pointing.menu .active.item {
   color: rgba(51, 64, 78, 0.5); }
+
+.content-block {
+  min-height: 90vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center; }
 
 ::-moz-selection {
   background: #333;
