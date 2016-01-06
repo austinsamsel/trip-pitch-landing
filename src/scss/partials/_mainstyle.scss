@@ -1,0 +1,135 @@
+// semantic ui overwrites.
+.pushable{
+  overflow-y:auto !important;
+}
+.hidden.menu {
+  display: none;
+}
+@media (max-width:768px){
+  .hidden.menu {
+    display: none !important;
+  }
+}
+
+.masthead.segment {
+  min-height: 700px;
+  padding: 1em 0em;
+}
+.masthead .logo.item img {
+  margin-right: 1em;
+}
+.masthead .ui.menu .ui.button {
+  margin-left: 0.5em;
+}
+.masthead h1.ui.header {
+  margin-top: 1.5em;
+  margin-bottom: 0em;
+  font-size: 4em;
+  font-weight: normal;
+}
+.masthead h2 {
+  font-size: 1.7em;
+  font-weight: normal;
+}
+.ui.vertical.stripe {
+  padding: 8em 0em;
+}
+.ui.vertical.stripe h3 {
+  font-size: 2em;
+}
+.ui.vertical.stripe .button + h3,
+.ui.vertical.stripe p + h3 {
+  margin-top: 3em;
+}
+.ui.vertical.stripe .floated.image {
+  clear: both;
+}
+.ui.vertical.stripe p {
+  font-size: 1.33em;
+}
+.ui.vertical.stripe .horizontal.divider {
+  margin: 3em 0em;
+}
+
+.quote.stripe.segment {
+  padding: 0em;
+}
+.quote.stripe.segment .grid .column {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.footer.segment {
+  padding: 5em 0em;
+}
+
+.secondary.pointing.menu .toc.item {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .ui.fixed.menu {
+    display: none !important;
+  }
+  .secondary.pointing.menu .item,
+  .secondary.pointing.menu .menu {
+    display: none;
+  }
+  .secondary.pointing.menu .toc.item {
+    display: block;
+  }
+  .masthead.segment {
+    min-height: 350px;
+  }
+  .masthead h1.ui.header {
+    font-size: 2em;
+    margin-top: 1.5em;
+  }
+  .masthead h2 {
+    margin-top: 0.5em;
+    font-size: 1.5em;
+  }
+}
+
+h1.ui.inverted.header {
+  font-family: $raleway;
+  color: $red;
+}
+
+.ui.inverted.segment{
+  background-color:$pale-blue;
+    background: url('/assets/img/header-bg.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.ui.secondary.inverted.pointing.menu {
+    border:none;
+}
+.ui.secondary.pointing.menu{
+  border:none;
+}
+
+.dark-text{
+  color:$dark-gray;
+}
+h3{
+  color:$dark-gray;
+}
+.ui.menu .item>img:not(.ui){
+  width: 10.5em;
+}
+
+.ui.secondary.pointing.menu .item{
+  font-family:$khula;
+  font-size:12px;
+  text-transform:uppercase;
+  border:none;
+  color:transparentize($dark-gray, 0.5);
+  transition:0.33s;
+}
+.ui.secondary.pointing.menu .active.item{
+  color:transparentize($dark-gray, 0.5);
+}

@@ -13,12 +13,32 @@
     "browser-sync": "^2.10.0",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
     "gulp-header": "^1.7.1",
+    "gulp-include": "^2.1.0",
     "gulp-jshint": "^2.0.0",
     "gulp-minify-css": "^1.2.2",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.1.1",
     "gulp-uglify": "^1.5.1",
     "jshint": "^2.8.0"
+  },
+  "dependencies": {
+    "semantic-ui-button": "^2.1.7",
+    "semantic-ui-container": "^2.1.7",
+    "semantic-ui-divider": "^2.1.7",
+    "semantic-ui-dropdown": "^2.1.7",
+    "semantic-ui-grid": "^2.1.7",
+    "semantic-ui-header": "^2.1.7",
+    "semantic-ui-icon": "^2.1.7",
+    "semantic-ui-image": "^2.1.7",
+    "semantic-ui-list": "^2.1.7",
+    "semantic-ui-menu": "^2.1.7",
+    "semantic-ui-reset": "^2.1.7",
+    "semantic-ui-segment": "^2.1.7",
+    "semantic-ui-sidebar": "^2.1.7",
+    "semantic-ui-site": "^2.1.7",
+    "semantic-ui-transition": "^2.1.7",
+    "semantic-ui-visibility": "^2.1.7"
   }
 }
