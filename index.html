@@ -21,10 +21,10 @@
 
 <!-- semantic -->
 <!-- Following Menu -->
-<div class="ui large top fixed hidden menu">
+<div class="ui large top fixed hidden menu following-wrap">
   <div class="ui container">
-    <img src="assets/img/logo-horizontal.svg" style="max-width:200px;max-height:30px;" alt="Trip Pitch Logo">
-    <div class="right menu">
+    <img src="assets/img/logo-horizontal.svg" class="following-logo" alt="Trip Pitch Logo">
+    <div class="right menu following-menu">
       <a class="active item">How it works</a>
       <a class="item">About</a>
       <a class="item">Contact</a>
@@ -44,7 +44,8 @@
 
 <!-- Page Contents -->
 <div class="pusher">
-  <div class="ui inverted vertical masthead center aligned segment" style="background-image:url('assets/img/header-bg.jpg')">
+
+  <div class="ui one column masthead centered grid" style="background-image:url('assets/img/header-bg.jpg');">
     <div class="ui container">
       <div class="ui large secondary pointing menu">
         <div class="left item">
@@ -53,19 +54,21 @@
         <a class="toc item">
           <i class="sidebar icon"></i>
         </a>
-        <a class="active item">Home</a>
-        <a class="item">Work</a>
-        <a class="item">Company</a>
-        <a class="item">Careers</a>
+        <a class="active item">How it works</a>
+        <a class="item">About</a>
+        <a class="item">Contact</a>
+        <a class="item">Blog</a>
       </div>
     </div>
 
-    <div class="ui text container">
-      <h1 class="ui inverted header">
-        Spend time living your adventure<span class="dark-text">—not planning it.</span>
-      </h1>
-      <h3>Register now for early access.</h3>
-      <div class="ui huge red button">Get Started <i class="right arrow icon"></i></div>
+    <div class="ui top aligned grid centered">
+      <div class="ten wide column text-centered">
+        <h1 class="ui inverted header hero">
+          Spend time living your adventure<span class="dark-text">—not planning it.</span>
+        </h1>
+        <h3 class="text-centered">Register now for early access.</h3>
+        <div class="ui huge white button">Get Started <i class="right arrow icon"></i></div>
+      </div>
     </div>
   </div>
 
@@ -93,57 +96,150 @@
     </div>
   </div>
 
-  <div class="ui vertical stripe segment content-block">
+  <div class="ui vertical stripe segment content-block" style="background-color:#E5F5F4">
     <div class="ui top aligned stackable grid container">
       <div class="row bottom aligned">
         <div class="sixteen wide column">
           <div style="text-align:center;">{{image}}</div>
         </div>
       </div>
-      <div class="three column row">
-        <div class="column">
-        </div>
+      <div class="three column centered row">
         <div class="column" style="text-align:center;">
           <h3>Trips inspired by you</h3>
           <p>We know that travel is about more than just flying somewhere or staying in a nice hotel, it's about experiencing the world and having adventures.</p>
         </div>
-        <div class="column">
+      </div>
+    </div>
+  </div>
+
+  <div class="ui vertical stripe segment content-block" style="background-color:#F5F7F7">
+    <div class="ui top aligned stackable grid container">
+      <div class="row bottom aligned">
+        <div class="sixteen wide column">
+          <div style="text-align:center;">{{image}}</div>
+        </div>
+      </div>
+      <div class="three column centered row">
+        <div class="column" style="text-align:center;">
+          <h3>TripPitch is made for…</h3>
+          <p>Travelers who love to have new experiences. Parents who want to share the world with their kids. Friends who go on adventures together.</p>
         </div>
       </div>
     </div>
   </div>
 
+  <div class="ui vertical stripe segment content-block">
+    <div class="ui top aligned stackable grid container">
+      <div class="row bottom aligned">
+        <div class="sixteen wide column">
+          <h2 class="section-header">Founders</h2>
+        </div>
+      </div>
+      <div class="ui grid">
+        <div class="eight wide column" style="text-align:center;">
+          <div class="ui items">
+            <div class="item">
+              <div class="image">
+                <img src="/assets/img/founder-robin.png">
+              </div>
+              <div class="content">
+                <a class="header">Robin Peters</a>
+                <div class="meta">
+                  <span>CEO, Founder</span>
+                </div>
+                <div class="description">
+                  Over 15 years in the software industry. Experienced leader in product management, development, and quality assurance.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="eight wide column" style="text-align:center;">
+          <div class="ui items">
+            <div class="item">
+              <div class="image">
+                <img src="/assets/img/founder-dustin.png">
+              </div>
+              <div class="content">
+                <a class="header">Dustin Krahenbuhl</a>
+                <div class="meta">
+                  <span>Software Engineer</span>
+                </div>
+                <div class="description">
+                  Dependable, Results-Driven IT Professional with a background in web development and .NET. I have been building applications and integrating with systems in the mortgage industry for the past 5+ years.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="eight wide column" style="text-align:center;">
+          <div class="ui items">
+            <div class="item">
+              <div class="image">
+                <img src="/assets/img/founder-kate.png">
+              </div>
+              <div class="content">
+                <a class="header">Kate Maxwell</a>
+                <div class="meta">
+                  <span>VP, Business Development</span>
+                </div>
+                <div class="description">
+                  Built Advertising Operations teams from the ground up at two prominent media companies, Tumblr and Gawker Media
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="weight wide column" style="text-align:center;">
+          <div class="ui items">
+            <div class="item">
+              <div class="image">
+                <img src="/assets/img/founder-austin.png">
+              </div>
+              <div class="content">
+                <a class="header">Austin Samsel</a>
+                <div class="meta">
+                  <span>Visual Engineer</span>
+                </div>
+                <div class="description">
+                  Austin Samsel is a visual designer and a programmer. He believes empathy and connection are the driving forces for creating great work.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui inverted vertical middle aligned segment content-block" style="background-color:#E46056;">
+    <div class="ui middle aligned grid centered">
+      <div class="ten wide column text-centered">
+        <h1 class="call-to-action text-centered">
+          Spend time living your adventure<span class="dark-text">—not planning it.</span>
+        </h1>
+        <h3 class="text-centered">Register now for early access.</h3>
+        <div class="ui huge white button">Get Started <i class="right arrow icon"></i></div>
+      </div>
+    </div>
+  </div>
 
   <div class="ui vertical stripe quote segment">
-    <div class="ui equal width stackable internally celled grid">
-      <div class="center aligned row">
-        <div class="column">
-          <h3>"What a Company"</h3>
-          <p>That is what they all say about us</p>
-        </div>
-        <div class="column">
-          <h3>"I shouldn't have gone with their competitor."</h3>
-          <p>
-            <img src="assets/images/avatar/nan.jpg" class="ui avatar image"> <b>Nan</b> Chief Fun Officer Acme Toys
-          </p>
-        </div>
+  <div class="ui two stackable internally celled grid">
+    <div class="center aligned row">
+      <div class="ten wide column">
+        <h3>"What a Company"</h3>
+        <p>That is what they all say about us</p>
+      </div>
+      <div class="six wide column">
+        <h3>"I shouldn't have gone with their competitor."</h3>
+        <p>
+          <img src="assets/images/avatar/nan.jpg" class="ui avatar image"> <b>Nan</b> Chief Fun Officer Acme Toys
+        </p>
       </div>
     </div>
   </div>
-
-  <div class="ui vertical stripe segment">
-    <div class="ui text container">
-      <h3 class="ui header">Breaking The Grid, Grabs Your Attention</h3>
-      <p>Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention.</p>
-      <a class="ui large button">Read More</a>
-      <h4 class="ui horizontal header divider">
-        <a href="#">Case Studies</a>
-      </h4>
-      <h3 class="ui header">Did We Tell You About Our Bananas?</h3>
-      <p>Yes I know you probably disregarded the earlier boasts as non-sequitor filler content, but its really true. It took years of gene splicing and combinatory DNA research, but our bananas can really dance.</p>
-      <a class="ui large button">I'm Still Quite Interested</a>
-    </div>
-  </div>
+</div>
 
 
   <div class="ui inverted vertical footer segment">

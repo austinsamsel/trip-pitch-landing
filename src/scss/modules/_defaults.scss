@@ -7,7 +7,7 @@ html {
   font-size: 100%;
 }
 body {
-  font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
+  font: 300 13px/1.8 'Helvetica Neue', Helvetica, Arial;
   color: #444;
   transition: all .4s .3s ease-in;
 }
@@ -28,13 +28,11 @@ h2{
 h3{
   font-family:$khula;
   font-weight:bold;
+  font-size:1.5rem;
 }
 p{
   font-family:$lora;
   color:$light-gray;
-}
-
-h2.section-header{
-  text-align:center;
-  margin-bottom:2rem;
+  font-size:1.125rem;
+  line-height:1.7rem;
 }
