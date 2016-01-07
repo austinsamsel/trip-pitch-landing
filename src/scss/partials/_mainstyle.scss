@@ -122,7 +122,7 @@ h3{
   color:transparentize($dark-gray,0.5) !important;
   padding-top:30px !important;
   transition:0.33s;
-  border-bottom:3px solid transparentize(#fff,0.0);
+  border-bottom:3px solid transparentize(#fff,1.0);
 }
 .ui.menu .following-menu a.item:hover{
   background:none !important;
@@ -180,6 +180,27 @@ h3{
 h2.section-header{
   text-align:center;
   margin-bottom:2rem;
+}
+
+/* section: contact */
+.social-icon{
+  height:40px;
+  width:40px;
+  margin:20px 5px;
+  border:1px solid #ABABAB;
+  opacity:0.33;
+  padding:10px;
+  border-radius: 3px;
+}
+img.contact-logo{
+  max-width:150px !important;
+  width:100%;
+  margin-bottom:1rem;
+}
+
+/* footer */
+.ui.inverted.vertical.footer.segment {
+  background-color: $dark-gray !important;
 }
 
 // overrides semantic ui red

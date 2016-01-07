@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="11px" height="24px" viewBox="0 0 11 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Mock-Combo" sketch:type="MSArtboardGroup" transform="translate(-1137.000000, -5066.000000)" fill="#000000">
+            <g id="Footer" sketch:type="MSLayerGroup" transform="translate(-23.000000, 4018.500000)">
+                <g id="social-icons" transform="translate(1146.101562, 1039.937500)" sketch:type="MSShapeGroup">
+                    <g id="facebook25">
+                        <g id="Capa_1" transform="translate(14.000000, 8.000000)">
+                            <g id="social-icons">
+                                <path d="M7.10486155,5.80684933 C7.10486155,5.51488539 7.11830836,5.28881084 7.14570624,5.12912992 C7.17293604,4.96911284 7.23479139,4.81178512 7.33076802,4.65647442 C7.42657657,4.50133181 7.58188726,4.39409347 7.79636394,4.33475941 C8.0110087,4.27525726 8.29641732,4.24567427 8.6525898,4.24567427 L10.5969991,4.24567427 L10.5969991,0.35651959 L7.48843191,0.35651959 C5.68958441,0.35651959 4.39784988,0.783287838 3.61272404,1.63682433 C2.82759821,2.49052892 2.43511934,3.74797408 2.43511934,5.40966407 L2.43511934,7.75142667 L0.106803554,7.75142667 L0.106803554,11.6407494 L2.43495125,11.6407494 L2.43495125,22.9249793 L7.10486155,22.9249793 L7.10486155,11.6407494 L10.2134287,11.6407494 L10.6242289,7.75142667 L7.10486155,7.75142667 L7.10486155,5.80684933 Z" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
