@@ -32,7 +32,10 @@ html {
   font-size: 100%; }
 
 body {
-  font: 300 13px/1.8 'Lora', Georgia, Serif;
+  font-weight: 300;
+  line-height: 1.8rem;
+  font-size: 13px;
+  font-family: 'Lora', Georgia, Serif;
   color: #444;
   transition: all .4s .3s ease-in; }
 
