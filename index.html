@@ -17,61 +17,63 @@
 
   <script src="assets/components/modernizr/modernizr.js"></script>
 </head>
-<body>
 
+<body class="pushable"> <!-- pushable stops menu glitch -->
 <!-- semantic -->
 <!-- Following Menu -->
-<div class="ui large top fixed hidden menu following-wrap">
-  <div class="ui container">
-    <img src="assets/img/logo-horizontal.svg" class="following-logo" alt="Trip Pitch Logo">
-    <div class="right menu following-menu">
-      <a class="active item">How it works</a>
-      <a class="item">About</a>
-      <a class="item">Contact</a>
-      <a class="item">Blog</a>
+<div class="ui large top fixed hidden menu">
+  <div class="ui container" id="menunav">
+    <li><a href="#home" class="logo-wrap"><img src="assets/img/logo-horizontal.svg" class="following-logo" alt="Trip Pitch Logo"></a></li>
+    <div class="right menu hide-mobile">
+      <ul class="right menu following-menu">
+        <li><a href="#howitworks" class="item">How it works</a></li>
+        <li><a href="#about" class="item">About</a></li>
+        <li><a href="#signup" class="item">Sign Up</a></li>
+        <li><a href="#contact" class="item">Contact</a></li>
+        <li><a href="http://blog.trippitch.com" class="item external">Blog</a></li>
+      </ul>
     </div>
+    <a class="toc item burger">
+      <i class="sidebar icon"></i>
+    </a>
   </div>
-</div>
-
-<!-- Sidebar Menu -->
-<div class="ui vertical inverted sidebar menu">
-  <a class="active item">How it works</a>
-  <a class="item">About</a>
-  <a class="item">Contact</a>
-  <a class="item">Blog</a>
 </div>
 
 
 <!-- Page Contents -->
 <div class="pusher">
+<div id="home" class="masthead" style="background-image:url('assets/img/header-bg.jpg');">
 
-  <div class="ui one column masthead centered grid" style="background-image:url('assets/img/header-bg.jpg');">
-    <div class="ui container">
-      <div class="ui large secondary pointing menu">
-        <div class="left item">
-          <img src="assets/img/logo-horizontal.svg" alt="Trip Pitch Logo">
-        </div>
-        <a class="toc item">
-          <i class="sidebar icon"></i>
-        </a>
-        <a class="active item">How it works</a>
-        <a class="item">About</a>
-        <a class="item">Contact</a>
-        <a class="item">Blog</a>
+  <div class="ui large top menu static">
+    <div class="ui container" id="topmenu">
+      <li><a href="#home" class="logo-wrap"><img src="assets/img/logo-horizontal.svg" class="following-logo" alt="Trip Pitch Logo"></a></li>
+      <div class="right menu hide-mobile">
+        <ul class="right menu following-menu">
+          <li><a href="#howitworks" class="item">How it works</a></li>
+          <li><a href="#about" class="item">About</a></li>
+          <li><a href="#signup" class="item">Sign Up</a></li>
+          <li><a href="#contact" class="item">Contact</a></li>
+          <li><a href="http://blog.trippitch.com" class="item external">Blog</a></li>
+        </ul>
       </div>
-    </div>
-
-    <div class="ui top aligned grid centered">
-      <div class="twelve wide column text-centered">
-        <h1 class="ui inverted header hero">
-          Spend time living your adventure<span class="dark-text"> —not planning it.</span>
-        </h1>
-        <h3 class="text-centered">Register now for early access.</h3>
-        <div class="ui huge white button">Get Started <i class="right arrow icon"></i></div>
-      </div>
+      <a class="toc item burger">
+        <i class="sidebar icon"></i>
+      </a>
     </div>
   </div>
 
+
+  <div class="ui top aligned grid centered">
+    <div class="twelve wide column text-centered">
+      <h1 class="ui inverted header hero">
+        Spend time living your adventure<span class="dark-text"> —not planning it.</span>
+      </h1>
+      <h3 class="text-centered">Register now for early access.</h3>
+      <div class="ui huge white button">Get Started <i class="right arrow icon"></i></div>
+    </div>
+  </div>
+</div>
+<div id="howitworks">
   <div class="ui vertical stripe segment content-block">
     <div class="ui top aligned stackable grid container">
       <div class="row bottom aligned">
@@ -95,12 +97,15 @@
       </div>
     </div>
   </div>
-
+</div>
+<div id="about">
   <div class="ui vertical stripe segment content-block" style="background-color:#E5F5F4">
     <div class="ui top aligned stackable grid container">
       <div class="row bottom aligned">
-        <div class="sixteen wide column">
-          <div style="text-align:center;">{{image}}</div>
+        <div class="sixteen wide column memories-wrap">
+          <div class="memories memory01"><img src="assets/img/memory-01.jpg"></div>
+          <div class="memories memory02"><img src="assets/img/memory-02.jpg"></div>
+          <div class="memories memory03"><img src="assets/img/memory-03.jpg"></div>
         </div>
       </div>
       <div class="three column centered row">
@@ -111,12 +116,13 @@
       </div>
     </div>
   </div>
-
   <div class="ui vertical stripe segment content-block" style="background-color:#F5F7F7">
     <div class="ui top aligned stackable grid container">
       <div class="row bottom aligned">
-        <div class="sixteen wide column">
-          <div style="text-align:center;">{{image}}</div>
+        <div class="sixteen wide column uiprev-wrap">
+          <div class="uiprev uiprev01"><img src="assets/img/uiprev-01.png"></div>
+          <div class="uiprev uiprev02"><img src="assets/img/uiprev-02.png"></div>
+          <div class="uiprev uiprev03"><img src="assets/img/uiprev-03.png"></div>
         </div>
       </div>
       <div class="three column centered row">
@@ -127,7 +133,6 @@
       </div>
     </div>
   </div>
-
   <div class="ui vertical stripe segment content-block">
     <div class="ui top aligned stackable grid container">
       <div class="row bottom aligned">
@@ -211,7 +216,8 @@
       </div>
     </div>
   </div>
-
+</div>
+<div id="signup">
   <div class="ui inverted vertical middle aligned segment content-block" style="background-color:#E46056;">
     <div class="ui middle aligned grid centered">
       <div class="ten wide column text-centered">
@@ -223,15 +229,16 @@
       </div>
     </div>
   </div>
-
+</div>
+<div id="contact">
   <div class="ui middle aligned four column centered grid" style="min-height:70vh;">
     <div class="ui two stackable internally celled grid">
       <div class="center middle aligned row">
         <div class="ten wide column">
           <div class="ui column centered grid">
             <div class="ten wide middle column">
-              <h3>Reach out.</h3>
-              <p>Do you have questions, ideas, or feedback? We’d love to hear from you.  You can Email us at <strong>contactus@trippitch.com</strong> or call us at <strong>+1 (858) 255-4250</strong></p>
+              <h3 class="h3-lg">Reach out.</h3>
+              <p class="p-lg">Do you have questions, ideas, or feedback? We’d love to hear from you.  You can Email us at <strong>contactus@trippitch.com</strong> or call us at <strong>+1 (858) 255-4250</strong></p>
             </div>
           </div>
         </div>
@@ -242,20 +249,20 @@
               <br>
               <img src="assets/img/icon-facebook.svg" class="social-icon" alt="Trip Pitch Logo">
               <img src="assets/img/icon-twitter.svg" class="social-icon" alt="Trip Pitch Logo">
-              <img src="assets/img/icon-medium.svg" class="social-icon" alt="Trip Pitch Logo">
+              <img src="assets/img/icon-medium.png" class="social-icon" alt="Trip Pitch Logo">
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
 
-
-  <div class="ui inverted vertical footer segment">
-    <div class="ui container" style="text-align:center;">
-      © Copyright TripPitch, 2016
-    </div>
+<div class="ui inverted vertical footer segment">
+  <div class="ui container" style="text-align:center;">
+    © Copyright TripPitch, 2016
   </div>
+</div>
 </div>
 <!-- end semantic -->
 
