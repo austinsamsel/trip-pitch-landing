@@ -5358,9 +5358,7 @@ For e.g. 'http://blahblah.us1.list-manage.com/subscribe/post-json?u=5afsdhfuhdsi
   function callbackFunction(resp) {
     if (resp.result === 'success') {
       $('#confirmation-msg').html('<span class="success">Thank you for registering!</span>');
-      console.log('it worked, success.')
     } else if(resp.result === 'error') {
-      alert("Error");
       $('#confirmation-msg').html('<span class="error">Something went wrong. Email us: contactus@trippitch.com</span>');
     }
   }
@@ -5369,19 +5367,17 @@ For e.g. 'http://blahblah.us1.list-manage.com/subscribe/post-json?u=5afsdhfuhdsi
   $('#mc-embedded-subscribe-form2').submit(function(e) {
   var $this = $(this);
   $.ajax({
-      type: "GET", // GET & url for json slightly different
-      url: "http://trippitch.us12.list-manage.com/subscribe/post-json?c=60a267c1d4bc0f7ce90f04669&amp;id=9bef743691",
+      type: "POST", // GET & url for json slightly different
+      url: "http://trippitch.us12.list-manage.com/subscribe/post-json?u=60a267c1d4bc0f7ce90f04669&amp;id=9bef743691&c=?",
       data: $this.serialize(),
-      dataType    : 'json',
+      dataType    : 'jsonp',
       contentType: "application/json; charset=utf-8",
       error       : function(err) { alert("Could not connect to the registration server."); },
       success     : function(data) {
           if (data.result != "success") {
-              // Something went wrong, parse data.msg string and display message
-              console.log('NAH');
+              $('#confirmation-msg2').html('<span class="error">Something went wrong. Email us: contactus@trippitch.com</span>');
           } else {
-              // It worked, so hide form and display thank-you message.
-              console.log('WORKED!!!!');
+              $('#confirmation-msg2').html('<span class="success">Thank you for registering!</span>');
           }
       }
   });

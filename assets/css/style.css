@@ -762,12 +762,12 @@ input#mce-EMAIL2:-moz-placeholder {
 input#mce-EMAIL2:-ms-input-placeholder {
   color: #fff !important; }
 
-.confirmation-msg2 {
+#confirmation-msg2 {
   font-family: "Khula", sans-serif;
   color: #33404E !important;
   margin-top: 2rem; }
 
-.confirmation-msg2 .error {
+#confirmation-msg2 .error {
   color: #fff; }
 
 /* section: how it works */
