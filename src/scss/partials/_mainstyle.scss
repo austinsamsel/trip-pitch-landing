@@ -52,7 +52,12 @@ h3{
 }
 
 /* section: welcome slide */
-
+#home .twelve.wide.column.text-centered {
+  width: 100% !important;
+  @media(min-width:600px){
+    width:75% !important;//semantic ui default
+  }
+}
 h1.ui.header.hero {
   font-family: $raleway;
   color: $red;
@@ -61,7 +66,7 @@ h1.ui.header.hero {
   //margin-top:2rem;
   @media(min-width:600px){
     font-size:3rem;
-  //  margin-top:3rem;
+    //  margin-top:3rem;
   }
   @media(min-width:768px){
     font-size:4rem;
@@ -71,12 +76,12 @@ h1.ui.header.hero {
 
 .masthead{
   background-color:$pale-blue;
-    background-repeat: no-repeat;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .hero-wrap{
   height: 80vh;
@@ -89,16 +94,18 @@ h1.ui.header.hero {
 /* main desktop menu */
 @media(max-width:600px){
   .ui.menu:not(.vertical) .item {
-      margin-top: 5px; // need to v-center nav-btn
+    margin-top: 5px; // need to v-center nav-btn
   }
 }
 @media(max-width:767px){
   .menu-wrap{
-    align-items:flex-start !important; //align top menu items to the top
+    //align top menu items to the top
+    align-items:flex-start !important;
   }
 }
-.ui.menu:not(.vertical) .right.item, .ui.menu:not(.vertical) .right.menu {
-    align-self: flex-end;
+.ui.menu:not(.vertical) .right.item,
+.ui.menu:not(.vertical) .right.menu {
+  align-self: flex-end;
 }
 .ui.container.full-width{
   width:100% !important;
@@ -116,12 +123,12 @@ h1.ui.header.hero {
   color:transparentize($dark-gray, 0.5);
   transition:0.33s;
   @media(max-width:767px){
-  //  margin: 0 0 -7px !important;
+    //  margin: 0 0 -7px !important;
   }
 }
 @media(min-width:768px){
   .ui.menu .item>img:not(.ui) {
-      margin: 3px 0 !important;
+    margin: 3px 0 !important;
   }
 }
 .ui.secondary.pointing.menu .active.item{
@@ -129,7 +136,7 @@ h1.ui.header.hero {
 }
 @media(max-width:768px){
   .hide-mobile li{
-      display:none !important;
+    display:none !important;
   }
   .nav-btn i{
     font-size:1.5rem;
@@ -219,10 +226,10 @@ a.toc.item.nav-btn:hover{
 }
 /* static menu */
 .static a.toc.item.nav-btn {
-    line-height: 1rem;
+  line-height: 1rem;
 }
 div#topmenu li {
-    list-style: none;
+  list-style: none;
 }
 .ui.large.top.menu.static {
   background: none;
@@ -244,24 +251,23 @@ a.toc.item.nav-btn {
 }
 /* mobile modal menu */
 ul.modal-nav {
-    padding-left: 0;
+  padding-left: 0;
 }
 .modal-nav li{
   list-style:none;
 }
 .modal-nav a{
-  font-family:$lora;
+  font-family:$raleway;
   font-size:2rem;
   color:#fff;
   line-height:4rem;
 }
 i.close.icon.nav-close {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 .ui.dimmer{
   background-color:rgba($dark-gray, 0.95) !important;
 }
-
 
 /* blocks of content, content sections */
 .content-block{
@@ -280,6 +286,13 @@ input#mc-embedded-subscribe{
   font-size: 1.2rem;
   line-height: 0.5rem;
   padding: 1.25rem 1rem 1rem;
+  width: 100%;
+  max-width:330px;
+  margin-top: 1rem;
+  @media(min-width:800px){
+    width:auto !important;
+    margin-top:0 !important;
+  }
 }
 .email.ui.input{
   max-width:330px;
@@ -339,6 +352,13 @@ input#mc-embedded-subscribe2{
   font-size: 1.2rem;
   line-height: 0.5rem;
   padding: 1.25rem 1rem 1rem;
+  width: 100%;
+  max-width:330px;
+  margin-top: 1rem;
+  @media(min-width:800px){
+    width:auto !important;
+    margin-top:0 !important;
+  }
 }
 input#mce-EMAIL2 {
   border-color: #fff !important;
@@ -376,6 +396,7 @@ input#mce-EMAIL2:-ms-input-placeholder {
     text-align:center;
   }
 }
+
 /* section: trips by you */
 
 .sixteen.wide.column.memories-wrap {
@@ -513,6 +534,12 @@ input#mce-EMAIL2:-ms-input-placeholder {
 
 
 /* section: call to action */
+#signup .ten.wide.column.text-centered {
+  width: 100% !important;
+  @media(min-width:600px){
+    width: 62.5%!important; //semantic ui default value
+  }
+}
 .call-to-action{
   font-family:$raleway;
   color:#fff;
@@ -521,7 +548,7 @@ input#mce-EMAIL2:-ms-input-placeholder {
   //margin-top:2rem;
   @media(min-width:600px){
     font-size:2.5rem;
-  //  margin-top:3rem;
+    //  margin-top:3rem;
   }
   @media(min-width:768px){
     font-size:3rem;
@@ -571,5 +598,5 @@ img.contact-logo{
   text-align:center !important;
 }
 .ui.centered.grid, .ui.centered.grid>.row, .ui.grid>.centered.row {
-    margin: 0 auto; // get hero text centered on xl screens
+  margin: 0 auto; // get hero text centered on xl screens
 }

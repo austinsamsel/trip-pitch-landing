@@ -474,6 +474,12 @@ h3 {
   width: 10.5em; }
 
 /* section: welcome slide */
+#home .twelve.wide.column.text-centered {
+  width: 100% !important; }
+  @media (min-width: 600px) {
+    #home .twelve.wide.column.text-centered {
+      width: 75% !important; } }
+
 h1.ui.header.hero {
   font-family: "Raleway", sans-serif;
   color: #E46056;
@@ -512,7 +518,8 @@ h1.ui.header.hero {
         -ms-flex-align: start !important;
             align-items: flex-start !important; } }
 
-.ui.menu:not(.vertical) .right.item, .ui.menu:not(.vertical) .right.menu {
+.ui.menu:not(.vertical) .right.item,
+.ui.menu:not(.vertical) .right.menu {
   -webkit-align-self: flex-end;
       -ms-flex-item-align: end;
           align-self: flex-end; }
@@ -655,7 +662,7 @@ ul.modal-nav {
   list-style: none; }
 
 .modal-nav a {
-  font-family: "Lora", Georgia, serif;
+  font-family: "Raleway", sans-serif;
   font-size: 2rem;
   color: #fff;
   line-height: 4rem; }
@@ -687,7 +694,14 @@ input#mc-embedded-subscribe {
   font-family: "Khula", sans-serif !important;
   font-size: 1.2rem;
   line-height: 0.5rem;
-  padding: 1.25rem 1rem 1rem; }
+  padding: 1.25rem 1rem 1rem;
+  width: 100%;
+  max-width: 330px;
+  margin-top: 1rem; }
+  @media (min-width: 800px) {
+    input#mc-embedded-subscribe {
+      width: auto !important;
+      margin-top: 0 !important; } }
 
 .email.ui.input {
   max-width: 330px;
@@ -744,7 +758,14 @@ input#mc-embedded-subscribe2 {
   font-family: "Khula", sans-serif !important;
   font-size: 1.2rem;
   line-height: 0.5rem;
-  padding: 1.25rem 1rem 1rem; }
+  padding: 1.25rem 1rem 1rem;
+  width: 100%;
+  max-width: 330px;
+  margin-top: 1rem; }
+  @media (min-width: 800px) {
+    input#mc-embedded-subscribe2 {
+      width: auto !important;
+      margin-top: 0 !important; } }
 
 input#mce-EMAIL2 {
   border-color: #fff !important;
@@ -936,6 +957,12 @@ input#mce-EMAIL2:-ms-input-placeholder {
     margin: 0 auto !important; } }
 
 /* section: call to action */
+#signup .ten.wide.column.text-centered {
+  width: 100% !important; }
+  @media (min-width: 600px) {
+    #signup .ten.wide.column.text-centered {
+      width: 62.5% !important; } }
+
 .call-to-action {
   font-family: "Raleway", sans-serif;
   color: #fff;
