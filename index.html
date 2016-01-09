@@ -19,36 +19,32 @@
 </head>
 
 <body class="pushable"> <!-- pushable stops menu glitch -->
-<!-- semantic -->
-<!-- Following Menu -->
-<div class="ui large top fixed hidden menu">
-  <div class="ui container" id="menunav">
-    <li><a href="#home" class="logo-wrap"><img src="assets/img/logo-horizontal.svg" class="following-logo" alt="Trip Pitch Logo"></a></li>
-    <div class="right menu hide-mobile">
-      <ul class="right menu following-menu">
-        <li><a href="#howitworks" class="item">How it works</a></li>
-        <li><a href="#about" class="item">About</a></li>
-        <li><a href="#signup" class="item">Sign Up</a></li>
-        <li><a href="#contact" class="item">Contact</a></li>
-        <li><a href="http://blog.trippitch.com" class="item external">Blog</a></li>
-      </ul>
+  <!-- semantic -->
+
+  <!-- Mobile Nav -->
+  <div class="ui basic modal">
+    <i class="close icon nav-close"></i>
+    <div class="image content">
+      <div class="image">
+        <ul class="modal-nav">
+          <li><a href="#howitworks" class="item approve">How it works</a></li>
+          <li><a href="#about" class="item approve">About</a></li>
+          <li><a href="#signup" class="item approve">Sign Up</a></li>
+          <li><a href="#contact" class="item approve">Contact</a></li>
+          <li><a href="http://blog.trippitch.com" class="item approve external">Blog</a></li>
+        </ul>
+      </div>
     </div>
-    <a class="toc item burger">
-      <i class="sidebar icon"></i>
-    </a>
   </div>
-</div>
 
-
-<!-- Page Contents -->
-<div class="pusher">
-<div id="home" class="masthead" style="background-image:url('assets/img/header-bg.jpg');">
-
-  <div class="ui large top menu static">
-    <div class="ui container" id="topmenu">
-      <li><a href="#home" class="logo-wrap"><img src="assets/img/logo-horizontal.svg" class="following-logo" alt="Trip Pitch Logo"></a></li>
+  <!-- Following Menu -->
+  <div class="ui large top fixed hidden menu">
+    <div class="ui container">
+      <div class="left menu">
+        <a href="#home" class="logo-wrap"><img src="assets/img/logo-horizontal.svg" class="following-logo" alt="Trip Pitch Logo"></a>
+      </div>
       <div class="right menu hide-mobile">
-        <ul class="right menu following-menu">
+        <ul class="right menu following-menu" id="followingMenu">
           <li><a href="#howitworks" class="item">How it works</a></li>
           <li><a href="#about" class="item">About</a></li>
           <li><a href="#signup" class="item">Sign Up</a></li>
@@ -56,227 +52,305 @@
           <li><a href="http://blog.trippitch.com" class="item external">Blog</a></li>
         </ul>
       </div>
-      <a class="toc item burger">
-        <i class="sidebar icon"></i>
-      </a>
     </div>
   </div>
 
+  <!-- mobile nav button -->
+  <a class="toc item nav-btn">
+    <i class="sidebar icon"></i>
+  </a>
 
-  <div class="ui top aligned grid centered">
-    <div class="twelve wide column text-centered">
-      <h1 class="ui inverted header hero">
-        Spend time living your adventure<span class="dark-text"> —not planning it.</span>
-      </h1>
-      <h3 class="text-centered">Register now for early access.</h3>
-      <div class="ui huge white button">Get Started </div>
-    </div>
-  </div>
-</div>
-<div id="howitworks">
-  <div class="ui vertical stripe segment content-block">
-    <div class="ui top aligned stackable grid container">
-      <div class="row bottom aligned">
-        <div class="sixteen wide column">
-          <h2 class="section-header">How it works</h2>
-        </div>
-      </div>
-      <div class="three column row">
-        <div class="column">
-          <h3>Create your travel profile</h3>
-          <p>Add your <strong>travel requirements</strong>: where you are, what you’d like to do, who you’re traveling with, and your budget. </p>
-        </div>
-        <div class="column">
-          <h3>Get Recommendations</h3>
-          <p>TravelPitch scans the web, compiles analytics to give you a better <strong>list of end-to-end recommendations</strong> for destinations, transportation, accommodations, and activities. </p>
-        </div>
-        <div class="column">
-          <h3>Book your adventure</h3>
-          <p>You can book your entire trip with TripPitch. You save time, money, and you get to spend more of it on your adventure. </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div id="about">
-  <div class="ui vertical stripe segment content-block" style="background-color:#E5F5F4">
-    <div class="ui top aligned stackable grid container">
-      <div class="row bottom aligned">
-        <div class="sixteen wide column memories-wrap">
-          <div class="memories memory01"><img src="assets/img/memory-01.jpg"></div>
-          <div class="memories memory02"><img src="assets/img/memory-02.jpg"></div>
-          <div class="memories memory03"><img src="assets/img/memory-03.jpg"></div>
-        </div>
-      </div>
-      <div class="three column centered row">
-        <div class="column" style="text-align:center;">
-          <h3>Trips inspired by you</h3>
-          <p>We know that travel is about more than just flying somewhere or staying in a nice hotel, it's about experiencing the world and having adventures.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="ui vertical stripe segment content-block" style="background-color:#F5F7F7">
-    <div class="ui top aligned stackable grid container">
-      <div class="row bottom aligned">
-        <div class="sixteen wide column uiprev-wrap">
-          <div class="uiprev uiprev01"><img src="assets/img/uiprev-01.png"></div>
-          <div class="uiprev uiprev02"><img src="assets/img/uiprev-02.png"></div>
-          <div class="uiprev uiprev03"><img src="assets/img/uiprev-03.png"></div>
-        </div>
-      </div>
-      <div class="three column centered row">
-        <div class="column" style="text-align:center;">
-          <h3>TripPitch is made for…</h3>
-          <p>Travelers who love to have new experiences. Parents who want to share the world with their kids. Friends who go on adventures together.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="ui vertical stripe segment content-block">
-    <div class="ui top aligned stackable grid container">
-      <div class="row bottom aligned">
-        <div class="sixteen wide column">
-          <h2 class="section-header">Founders</h2>
-        </div>
-      </div>
-      <div class="ui grid">
-        <div class="eight wide column" style="text-align:center;">
-          <div class="ui items">
-            <div class="item">
-              <div class="image">
-                <img src="assets/img/founder-robin.png">
-              </div>
-              <div class="content">
-                <a class="header">Robin Peters</a>
-                <div class="meta">
-                  <span>CEO, Founder</span>
-                </div>
-                <div class="description">
-                  Over 15 years in the software industry. Experienced leader in product management, development, and quality assurance.
-                </div>
-              </div>
-            </div>
+
+  <!-- Page Contents -->
+  <div class="pusher">
+    <div id="home" class="masthead" style="background-image:url('assets/img/header-bg.jpg');">
+
+      <div class="ui large top menu static">
+        <div class="ui container menu-wrap">
+          <div class="left menu">
+            <a href="#home" class="logo-wrap"><img src="assets/img/logo-horizontal.svg" class="following-logo" alt="Trip Pitch Logo"></a>
+          </div>
+          <div class="right menu hide-mobile">
+            <ul class="right menu following-menu" id="topmenu">
+              <li><a href="#howitworks" class="item">How it works</a></li>
+              <li><a href="#about" class="item">About</a></li>
+              <li><a href="#signup" class="item">Sign Up</a></li>
+              <li><a href="#contact" class="item">Contact</a></li>
+              <li><a href="http://blog.trippitch.com" class="item external">Blog</a></li>
+            </ul>
           </div>
         </div>
-        <div class="eight wide column" style="text-align:center;">
-          <div class="ui items">
-            <div class="item">
-              <div class="image">
-                <img src="assets/img/founder-dustin.png">
-              </div>
-              <div class="content">
-                <a class="header">Dustin Krahenbuhl</a>
-                <div class="meta">
-                  <span>Software Engineer</span>
+      </div>
+
+      <div class="middle aligned row hero-wrap">
+        <div class="ui middle aligned one column grid centered">
+          <div class="twelve wide column text-centered">
+            <h1 class="ui inverted header hero">
+              Spend time living your adventure<span class="dark-text"> —not planning it.</span>
+            </h1>
+            <h3 class="text-centered">Register now for early access.</h3>
+
+
+            <!-- Begin MailChimp Signup Form -->
+            <div id="mc_embed_signup">
+              <form action="//trippitch.us12.list-manage.com/subscribe/post?u=60a267c1d4bc0f7ce90f04669&amp;id=9bef743691" method="POST" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll" class="two-fields ui form">
+
+                  <div class="mc-field-group field" >
+                    <input type="email" value="" name="EMAIL" class="required email ui input" id="mce-EMAIL" placeholder="Your email address…">
+                    <input type="submit" value="SIGN UP" name="subscribe" id="mc-embedded-subscribe" class="ui button red">
+                    <div id="confirmation-msg"></div>
+                  </div>
+                  <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                  </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <input type="text" name="b_60a267c1d4bc0f7ce90f04669_9bef743691" tabindex="-1" value="">
+                  </div>
+                  <div class="field">
+
+                  </div>
                 </div>
-                <div class="description">
-                  Dependable, Results-Driven IT Professional with a background in web development and .NET. I have been building applications and integrating with systems in the mortgage industry for the past 5+ years.
-                </div>
-              </div>
+              </form>
             </div>
-          </div>
-        </div>
-        <div class="eight wide column" style="text-align:center;">
-          <div class="ui items">
-            <div class="item">
-              <div class="image">
-                <img src="assets/img/founder-kate.png">
-              </div>
-              <div class="content">
-                <a class="header">Kate Maxwell</a>
-                <div class="meta">
-                  <span>VP, Business Development</span>
-                </div>
-                <div class="description">
-                  Built Advertising Operations teams from the ground up at two prominent media companies, Tumblr and Gawker Media
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="weight wide column" style="text-align:center;">
-          <div class="ui items">
-            <div class="item">
-              <div class="image">
-                <img src="assets/img/founder-austin.png">
-              </div>
-              <div class="content">
-                <a class="header">Austin Samsel</a>
-                <div class="meta">
-                  <span>Visual Engineer</span>
-                </div>
-                <div class="description">
-                  Austin Samsel is a visual designer and a programmer. He believes empathy and connection are the driving forces for creating great work.
-                </div>
-              </div>
-            </div>
+
+            <!--End mc_embed_signup-->
+
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-<div id="signup">
-  <div class="ui inverted vertical middle aligned segment content-block" style="background-color:#E46056;">
-    <div class="ui middle aligned grid centered">
-      <div class="ten wide column text-centered">
-        <h1 class="call-to-action text-centered">
-          Spend time living your adventure<span class="dark-text">—not planning it.</span>
-        </h1>
-        <h3 class="text-centered">Register now for early access.</h3>
-        <div class="ui huge white button">Get Started </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div id="contact">
-  <div class="ui middle aligned four column centered grid" style="min-height:70vh;">
-    <div class="ui two stackable internally celled grid">
-      <div class="center middle aligned row">
-        <div class="ten wide column">
-          <div class="ui column centered grid">
-            <div class="ten wide middle column">
-              <h3 class="h3-lg">Reach out.</h3>
-              <p class="p-lg">Do you have questions, ideas, or feedback? We’d love to hear from you.  You can Email us at <strong>contactus@trippitch.com</strong> or call us at <strong>+1 (858) 255-4250</strong></p>
+    <div id="howitworks">
+      <div class="ui vertical stripe segment content-block">
+        <div class="ui top aligned stackable grid container">
+          <div class="row bottom aligned">
+            <div class="sixteen wide column">
+              <h2 class="section-header">How it works</h2>
             </div>
           </div>
-        </div>
-        <div class="ui center middle aligned six wide column grid">
-          <div class="row">
+          <div class="three column row">
             <div class="column">
-              <img src="assets/img/logo-vertical.svg" class="contact-logo" alt="Trip Pitch Logo">
-              <br>
-              <img src="assets/img/icon-facebook.svg" class="social-icon" alt="Trip Pitch Logo">
-              <img src="assets/img/icon-twitter.svg" class="social-icon" alt="Trip Pitch Logo">
-              <img src="assets/img/icon-medium.png" class="social-icon" alt="Trip Pitch Logo">
+              <h3>Create your travel profile</h3>
+              <p>Add your <strong>travel requirements</strong>: where you are, what you’d like to do, who you’re traveling with, and your budget. </p>
+            </div>
+            <div class="column">
+              <h3>Get Recommendations</h3>
+              <p>TravelPitch scans the web, compiles analytics to give you a better <strong>list of end-to-end recommendations</strong> for destinations, transportation, accommodations, and activities. </p>
+            </div>
+            <div class="column">
+              <h3>Book your adventure</h3>
+              <p>You can book your entire trip with TripPitch. You save time, money, and you get to spend more of it on your adventure. </p>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <div id="about">
+      <div class="ui vertical stripe segment content-block" style="background-color:#E5F5F4">
+        <div class="ui top aligned stackable grid container">
+          <div class="row bottom aligned">
+            <div class="sixteen wide column memories-wrap">
+              <div class="memories memory01"><img src="assets/img/memory-01.jpg"></div>
+              <div class="memories memory02"><img src="assets/img/memory-02.jpg"></div>
+              <div class="memories memory03"><img src="assets/img/memory-03.jpg"></div>
+            </div>
+          </div>
+          <div class="three column centered row">
+            <div class="column about-centered">
+              <h3>Trips inspired by you</h3>
+              <p>We know that travel is about more than just flying somewhere or staying in a nice hotel, it's about experiencing the world and having adventures.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ui vertical stripe segment content-block" style="background-color:#F5F7F7">
+        <div class="ui top aligned stackable grid container">
+          <div class="row bottom aligned">
+            <div class="sixteen wide column uiprev-wrap">
+              <div class="uiprev uiprev01"><img src="assets/img/uiprev-01.png"></div>
+              <div class="uiprev uiprev02"><img src="assets/img/uiprev-02.png"></div>
+              <div class="uiprev uiprev03"><img src="assets/img/uiprev-03.png"></div>
+            </div>
+          </div>
+          <div class="three column centered row">
+            <div class="column about-centered">
+              <h3>TripPitch is made for…</h3>
+              <p>Travelers who love to have new experiences. Parents who want to share the world with their kids. Friends who go on adventures together.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ui vertical stripe segment content-block">
+        <div class="ui top aligned stackable grid container">
+          <div class="row bottom aligned">
+            <div class="sixteen wide column">
+              <h2 class="section-header">Founders</h2>
+            </div>
+          </div>
+          <div class="ui grid">
+            <div class="eight wide column" style="text-align:center;">
+              <div class="ui items">
+                <div class="item">
+                  <div class="image">
+                    <img src="assets/img/founder-robin.png">
+                  </div>
+                  <div class="content">
+                    <a class="header">Robin Peters</a>
+                    <div class="meta">
+                      <span>CEO, Founder</span>
+                    </div>
+                    <div class="description">
+                      Over 15 years in the software industry. Experienced leader in product management, development, and quality assurance.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="eight wide column" style="text-align:center;">
+              <div class="ui items">
+                <div class="item">
+                  <div class="image">
+                    <img src="assets/img/founder-dustin.png">
+                  </div>
+                  <div class="content">
+                    <a class="header">Dustin Krahenbuhl</a>
+                    <div class="meta">
+                      <span>Software Engineer</span>
+                    </div>
+                    <div class="description">
+                      Dependable, Results-Driven IT Professional with a background in web development and .NET. I have been building applications and integrating with systems in the mortgage industry for the past 5+ years.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="eight wide column" style="text-align:center;">
+              <div class="ui items">
+                <div class="item">
+                  <div class="image">
+                    <img src="assets/img/founder-kate.png">
+                  </div>
+                  <div class="content">
+                    <a class="header">Kate Maxwell</a>
+                    <div class="meta">
+                      <span>VP, Business Development</span>
+                    </div>
+                    <div class="description">
+                      Built Advertising Operations teams from the ground up at two prominent media companies, Tumblr and Gawker Media
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="weight wide column" style="text-align:center;">
+              <div class="ui items">
+                <div class="item">
+                  <div class="image">
+                    <img src="assets/img/founder-austin.png">
+                  </div>
+                  <div class="content">
+                    <a class="header">Austin Samsel</a>
+                    <div class="meta">
+                      <span>Visual Engineer</span>
+                    </div>
+                    <div class="description">
+                      Austin Samsel is a visual designer and a programmer. He believes empathy and connection are the driving forces for creating great work.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="signup">
+      <div class="ui inverted vertical middle aligned segment content-block" style="background-color:#E46056;">
+        <div class="ui middle aligned grid centered">
+          <div class="ten wide column text-centered">
+            <h1 class="call-to-action text-centered">
+              Spend time living your adventure<span class="dark-text">—not planning it.</span>
+            </h1>
+            <h3 class="text-centered">Register now for early access.</h3>
+
+            <!-- Begin MailChimp Signup Form -->
+            <div id="mc_embed_signup2">
+              <form action="//trippitch.us12.list-manage.com/subscribe/post?u=60a267c1d4bc0f7ce90f04669&amp;id=9bef743691" method="POST" id="mc-embedded-subscribe-form2" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll2" class="two-fields ui form">
+
+                  <div class="mc-field-group field" >
+                    <input type="email" value="" name="EMAIL" class="required email ui input" id="mce-EMAIL2" placeholder="Your email address…">
+                    <input type="submit" value="SIGN UP" name="subscribe" id="mc-embedded-subscribe2" class="ui button white">
+                    <div class="mc-response confirmation-msg2"></div>
+                  </div>
+                  <div id="mce-responses2" class="clear">
+                    <div class="response" id="mce-error-response2" style="display:none"></div>
+                    <div class="response" id="mce-success-response2" style="display:none"></div>
+                  </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <input type="text" name="b_60a267c1d4bc0f7ce90f04669_9bef743691" tabindex="-1" value="">
+                  </div>
+                  <div class="field">
+
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <!--End mc_embed_signup-->
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contact">
+      <div class="ui middle aligned four column centered grid" style="min-height:70vh;">
+        <div class="ui two stackable internally celled grid">
+          <div class="center middle aligned row">
+            <div class="ten wide column">
+              <div class="ui column centered grid">
+                <div class="ten wide middle column reach-out">
+                  <h3 class="h3-lg">Reach out.</h3>
+                  <p class="p-lg">Do you have questions, ideas, or feedback? We’d love to hear from you.  You can Email us at <strong>contactus@trippitch.com</strong> or call us at <strong>+1 (858) 255-4250</strong></p>
+                </div>
+              </div>
+            </div>
+            <div class="ui center middle aligned six wide column grid">
+              <div class="row">
+                <div class="column">
+                  <img src="assets/img/logo-vertical.svg" class="contact-logo" alt="Trip Pitch Logo">
+                  <br>
+                  <img src="assets/img/icon-facebook.svg" class="social-icon" alt="Trip Pitch Logo">
+                  <img src="assets/img/icon-twitter.svg" class="social-icon" alt="Trip Pitch Logo">
+                  <img src="assets/img/icon-medium.png" class="social-icon" alt="Trip Pitch Logo">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ui inverted vertical footer segment">
+      <div class="ui container" style="text-align:center;">
+        © Copyright TripPitch, 2016
+      </div>
+    </div>
   </div>
-</div>
+  <!-- end semantic -->
 
-<div class="ui inverted vertical footer segment">
-  <div class="ui container" style="text-align:center;">
-    © Copyright TripPitch, 2016
-  </div>
-</div>
-</div>
-<!-- end semantic -->
+  <script src="assets/js/scripts.min.js"></script>
 
-<script src="assets/js/scripts.min.js"></script>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
 
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-<script>
-(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-  function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-  e.src='//www.google-analytics.com/analytics.js';
-  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-  ga('create','UA-XXXXX-X');ga('send','pageview');
-  </script>
-
-</body>
-</html>
+  </body>
+  </html>
