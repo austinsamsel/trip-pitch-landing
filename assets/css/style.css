@@ -433,6 +433,7 @@ th {
   overflow-y: auto !important; }
 
 .masthead {
+  min-height: 90%;
   min-height: 90vh; }
 
 .masthead .logo.item img {
