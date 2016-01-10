@@ -44,8 +44,12 @@ h3{
   font-size:2rem;
 }
 .p-lg{
-  font-size:1.4rem;
-  line-height:1.9rem;
+  font-size:1.0rem;
+  line-height:1.5rem;
+  @media(min-width:600px){
+    font-size:1.4rem;
+    line-height:1.9rem;
+  }
 }
 .ui.menu .item>img:not(.ui){
   width: 10.5em;
@@ -568,7 +572,7 @@ h2.section-header{
 
 /* section: contact */
 .reach-out{
-  @media(max-width:768px){
+  @media(min-width:768px){
     padding:4rem 0 !important;
   }
 }
