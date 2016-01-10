@@ -463,8 +463,10 @@ input#mce-EMAIL2:-ms-input-placeholder {
 }
 .about-centered{
   text-align:center !important;
-  min-width:360px !important;
-  max-width:460px;
+  @media(min-width:400px){
+    min-width:360px !important;
+    max-width:460px;
+  }
 }
 
 .uiprev01 img{

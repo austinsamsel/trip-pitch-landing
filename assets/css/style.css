@@ -895,9 +895,11 @@ input#mce-EMAIL2:-ms-input-placeholder {
               flex-wrap: wrap-reverse; } }
 
 .about-centered {
-  text-align: center !important;
-  min-width: 360px !important;
-  max-width: 460px; }
+  text-align: center !important; }
+  @media (min-width: 400px) {
+    .about-centered {
+      min-width: 360px !important;
+      max-width: 460px; } }
 
 .uiprev01 img {
   max-height: 100px;
