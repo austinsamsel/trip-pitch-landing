@@ -4,7 +4,6 @@
 }
 .masthead {
   min-height:90%;
-  min-height: 90vh;
 }
 .masthead .logo.item img {
   margin-right: 1em;
@@ -85,8 +84,8 @@ h1.ui.header.hero {
   background-size: cover;
 }
 .hero-wrap{
-  height:80%;
-  height: 80vh;
+  padding:3rem 0;
+  min-height:80%;
   display: flex;
 }
 .ui.secondary.pointing.menu{
@@ -274,7 +273,6 @@ i.close.icon.nav-close {
 /* blocks of content, content sections */
 .content-block{
   min-height:90%;
-  min-height:90vh;
   padding:9rem 0 !important;
   display:flex;
   align-self:center;
