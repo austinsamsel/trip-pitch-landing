@@ -71,8 +71,8 @@ h3 {
 p {
   font-family: "Lora", Georgia, serif;
   color: #99A0A7;
-  font-size: 1.075rem;
-  line-height: 1.7rem; }
+  font-size: 0.95rem;
+  line-height: 1.5rem; }
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
@@ -955,7 +955,8 @@ input#mce-EMAIL2:-ms-input-placeholder {
 
 .ui.items > .item > .content > .description {
   font-family: "Lora", Georgia, serif;
-  font-size: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.5rem;
   color: #99A0A7 !important; }
 
 @media (max-width: 767px) {
