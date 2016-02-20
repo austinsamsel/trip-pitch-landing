@@ -70,7 +70,7 @@ h3 {
 
 p {
   font-family: "Lora", Georgia, serif;
-  color: #99A0A7;
+  color: #747A80;
   font-size: 0.95rem;
   line-height: 1.5rem; }
 
@@ -957,7 +957,7 @@ input#mce-EMAIL2:-ms-input-placeholder {
   font-family: "Lora", Georgia, serif;
   font-size: 0.95rem;
   line-height: 1.5rem;
-  color: #99A0A7 !important; }
+  color: #747A80 !important; }
 
 @media (max-width: 767px) {
   .content {
