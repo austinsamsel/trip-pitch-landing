@@ -494,7 +494,9 @@ h1.ui.header.hero {
       font-size: 3rem; } }
   @media (min-width: 768px) {
     h1.ui.header.hero {
-      font-size: 4rem; } }
+      font-size: 4rem;
+      font-size: 5vw;
+      margin-bottom: 4rem; } }
 
 .masthead {
   background-color: #E5F3FF;
@@ -508,6 +510,9 @@ h1.ui.header.hero {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+  @media (min-width: 768px) {
+    .hero-wrap {
+      min-height: 80vh; } }
 
 .ui.secondary.pointing.menu {
   border: none; }

@@ -74,6 +74,8 @@ h1.ui.header.hero {
   }
   @media(min-width:768px){
     font-size:4rem;
+    font-size:5vw;
+    margin-bottom:4rem;
     // margin-top:4rem;
   }
 }
@@ -91,6 +93,9 @@ h1.ui.header.hero {
   padding:3rem 0;
   min-height:80%;
   display: flex;
+  @media(min-width:768px){
+    min-height:80vh
+  }
 }
 .ui.secondary.pointing.menu{
   border:none;
